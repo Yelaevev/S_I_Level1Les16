@@ -20,7 +20,7 @@ namespace Level1Space
 
             if(N!=items.Length) return Not;
 
-            if (N < 2) return Not;
+           if (N < 0) return Not;
 
             // string PartName = "!";
             for (int i = 0; i < items.Length; i++)
@@ -201,16 +201,17 @@ namespace Level1Space
             return rezult;
         }
 
-        //static void Main(string[] args)
-        //{
-        //    string[] items = { "пальто 12\n", "шуба 28\n", "платье1 5\n", "сумка32 4\n", "платье1 1\n", "сумка32 2\n" , "сумка32 6\n" };
-        //    //string[] items = { "платье1 5\n", "сумка32 2\n", "платье1 1\n", "сумка23 2\n", "сумка128 4\n" };
-        //    foreach (string t in items) Console.Write(t);
-        //    string[] rezult = ShopOLAP(7, items);
-           
-        //    Console.WriteLine(" ");
-        //    foreach (string t in rezult) Console.Write(t);
-        //}
+        static void Main(string[] args)
+        {
+            //string[] items = { "пальто 12\n", "shuba 28\n", "платье1 5\n", "сумка32 4\n", "платье1 1\n", "сумка32 2\n", "сумка32 6\n" };
+            //string[] items = { "платье1 5\n", "сумка32 2\n", "платье1 1\n", "сумка23 2\n", "сумка128 4\n" };
+            string[] items = { "платье1 5\n"};
+            foreach (string t in items) Console.Write(t);
+            string[] rezult = ShopOLAP(1, items);
+
+            Console.WriteLine(" ");
+            foreach (string t in rezult) Console.Write(t);
+        }
 
     }
 }
