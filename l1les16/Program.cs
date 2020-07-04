@@ -99,11 +99,8 @@ namespace Level1Space
             //foreach (string t in NewNameList) Console.Write(t + "\t");
             //Console.WriteLine(" ");
 
-            //foreach (int t in NewMountList) Console.Write(t + "\t");
-            //Console.WriteLine(" ");
-            //Console.WriteLine("список значений после объединения");
-            //Console.WriteLine("новый размер списка= " + ListLength);
-
+           
+            
 
             for (int i = 0; i < ListLength; i++)
             {
@@ -127,15 +124,24 @@ namespace Level1Space
 
                     if (NewMountList[i] == NewMountList[j])
                     {
-                        if (NewNameList[i].Length >= NewNameList[j].Length)
-                        {
+                        //if (NewNameList[i].Length == NewNameList[j].Length)
+                        //{
+                        //    NewNameList[i] = NewNameList[i];
+                        //    NewNameList[j] = NewNameList[j];
+                        //}
 
-                            // string EqSmallName = NewNameList[i];
-                            //// Console.WriteLine(EqSmallName + "=name of equals ");
-                            // NewNameList[i] = NewNameList[j];
-                            // NewNameList[j] = EqSmallName;
+                        //    if (NewNameList[i].Length > NewNameList[j].Length)
+                        //{
+
+                        //    //string EqSmallName = NewNameList[i];
+                        //     //Console.WriteLine(EqSmallName + "=name of equals ");
+                        //    // NewNameList[i] = NewNameList[j];
+                        //    // NewNameList[j] = EqSmallName;
+                        if(String.Compare(NewNameList[i], NewNameList[j])<0)
+                        { 
                             string EqSmallName = NewNameList[j];
-                            // Console.WriteLine(EqSmallName + "=name of equals ");
+                            //string EqBigName = NewNameList[i];
+                            //Console.WriteLine(EqSmallName + " =name of equals  small "+ EqBigName+ " =name of equals  big");
                             NewNameList[j] = NewNameList[i];
                             NewNameList[i] = EqSmallName;
                         }
@@ -204,13 +210,14 @@ namespace Level1Space
         //static void Main(string[] args)
         //{
         //    //string[] items = { "пальто 12\n", "shuba 28\n", "платье1 5\n", "сумка32 4\n", "платье1 1\n", "сумка32 2\n", "сумка32 6\n" };
-        //    //string[] items = { "платье1 5\n", "сумка32 2\n", "платье1 1\n", "сумка23 2\n", "сумка128 4\n" };
-        //    string[] items = { "платье1 5\n"};
-        //    foreach (string t in items) Console.Write(t);
-        //    string[] rezult = ShopOLAP(1, items);
+        //    // string[] items = { "платье1 5\n", "сумка32 2\n", "платье1 1\n", "сумка23 2\n", "сумка128 4\n" };
+        //    string[] items = { "123 5", "32 3", "124 5", "128 1", "32 2", "23 4", "128 4", "128 1" };
+        //    Console.WriteLine("исходная строка");
+        //    foreach (string t in items) Console.Write(t + " ");
+        //    string[] rezult = ShopOLAP(items.Length, items);
 
         //    Console.WriteLine(" ");
-        //    foreach (string t in rezult) Console.Write(t);
+        //    foreach (string t in rezult) Console.Write(t + " ");
         //}
 
     }
