@@ -201,17 +201,17 @@ namespace Level1Space
             return rezult;
         }
 
-        static void Main(string[] args)
-        {
-            //string[] items = { "пальто 12\n", "shuba 28\n", "платье1 5\n", "сумка32 4\n", "платье1 1\n", "сумка32 2\n", "сумка32 6\n" };
-            //string[] items = { "платье1 5\n", "сумка32 2\n", "платье1 1\n", "сумка23 2\n", "сумка128 4\n" };
-            string[] items = { "платье1 5\n"};
-            foreach (string t in items) Console.Write(t);
-            string[] rezult = ShopOLAP(1, items);
+        //static void Main(string[] args)
+        //{
+        //    //string[] items = { "пальто 12\n", "shuba 28\n", "платье1 5\n", "сумка32 4\n", "платье1 1\n", "сумка32 2\n", "сумка32 6\n" };
+        //    //string[] items = { "платье1 5\n", "сумка32 2\n", "платье1 1\n", "сумка23 2\n", "сумка128 4\n" };
+        //    string[] items = { "платье1 5\n"};
+        //    foreach (string t in items) Console.Write(t);
+        //    string[] rezult = ShopOLAP(1, items);
 
-            Console.WriteLine(" ");
-            foreach (string t in rezult) Console.Write(t);
-        }
+        //    Console.WriteLine(" ");
+        //    foreach (string t in rezult) Console.Write(t);
+        //}
 
     }
 }
