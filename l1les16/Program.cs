@@ -20,7 +20,7 @@ namespace Level1Space
 
             if(N!=items.Length) return Not;
 
-           if (N < 0) return Not;
+           if (N < 1) return Not;
 
             // string PartName = "!";
             for (int i = 0; i < items.Length; i++)
